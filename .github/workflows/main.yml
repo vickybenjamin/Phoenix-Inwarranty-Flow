@@ -9,7 +9,7 @@ on:
     -cron : 30 23 * * * # 7:30pm GST Everyday
     -cron : 30 15 * * 1-5 # 11:30pm GST from Monday to Friday
 
-jobs:
+jobs: 
   run-postman-tests:
     runs-on: ubuntu-latest
 
@@ -34,7 +34,7 @@ jobs:
              -d testdata.csv \
              -r cli,htmlextra
 
-     - name: Newman Report
+      - name: Newman Report
        uses: actions/upload-artifact@v6.0.0
        with:
          name: Newman Report
