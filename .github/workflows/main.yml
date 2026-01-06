@@ -5,9 +5,9 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule: 
-    -cron: 00 12 * * * #8am GST Everyday
-    -cron: 30 23 * * * #7:30pm GST Everyday
-    -cron : '30 15 * * 1-5' #11:30pm GST from Monday to Friday
+    - cron: 00 12 * * * #8am GST Everyday
+    - cron: 30 23 * * * #7:30pm GST Everyday
+    - cron: 30 15 * * 1-5 #11:30pm GST from Monday to Friday
 
 jobs: 
   run-postman-tests:
