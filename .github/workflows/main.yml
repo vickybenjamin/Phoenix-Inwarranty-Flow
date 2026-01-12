@@ -11,7 +11,7 @@ on:
 
 jobs: 
   run-postman-tests:
-    runs-on: ubuntu-latest
+    runs-on: ec2-github-runner
     steps: 
       - name: Checkout the code
         uses: actions/checkout@v6.0.1
@@ -60,7 +60,7 @@ jobs:
           from: ${{ secrets.EMAIL_USERNAME }}
           body: |
                 Hi,
-                Phoenix Inwarranty flow test has been executed. The report has been published and the URL \
+                Phoenix Inwarranty flow test has been executed. The report has been published and the URL 
                 is: https://vickybenjamin.github.io/Phoenix-Inwarranty-Flow/
                 
 
